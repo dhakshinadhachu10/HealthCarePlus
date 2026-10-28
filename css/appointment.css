@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   /* background:url("../images/fll-lp-ban-img-01.png"); */
+  color: #333333;
+}
+
+.header{
+    height:80px;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 70px;
+    background:linear-gradient(to right,#0072ff,#00c6ff);
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+#logo{
+    width:80px;
+    height:60px;
+    border-radius:50%;
+}
+
+.logo h1{
+    font-size:38px;
+}
+
+nav{
+    display:flex;
+    gap:35px;
+}
+
+.nav-link{
+    text-decoration:none;
+    color:#222;
+    font-size:18px;
+    font-weight:bold;
+    padding:10px 15px;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+    background:black;
+    color:#39ff14;
+}
+
+
+#btn1{
+    padding:12px 22px;
+    border:none;
+    border-radius:8px;
+    background:#0D6EFD;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    font-weight: bold;
+    transition:.3s;
+}
+
+#btn1:hover{
+    transform:scale(1.05);
+    background:black;
+    color:#39ff14;
+}
+
+#appointment-hero {
+  background: #f5fbff;
+  text-align: center;
+  padding: 60px 20px 50px;
+}
+
+#appointment-hero h2 {
+  font-size: 36px;
+  color: #0d6efd;
+  margin-bottom: 14px;
+}
+
+.appointment-hero-text {
+  width: 55%;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #444444;
+}
+
+.appointment-main-section {
+  display: flex;
+  gap: 40px;
+  padding: 10px 60px 80px;
+  align-items: flex-start;
+}
+
+.appointment-form {
+  flex: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.form-block {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 28px;
+}
+
+.form-block h3 {
+  color: #0d6efd;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.form-row:last-child {
+  margin-bottom: 0;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 14px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #1a1a1a;
+  background: #ffffff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0d6efd;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.mode-options {
+  display: flex;
+  gap: 25px;
+}
+
+.mode-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  color: #333333;
+  font-weight: normal;
+}
+
+.form-submit {
+  align-self: flex-start;
+  padding: 14px 32px;
+  font-size: 16px;
+}
+
+.summary-card {
+  flex: 1;
+  position: sticky;
+  top: 20px;
+  background: #f5fbff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 28px;
+}
+
+.summary-card h3 {
+  color: #1a1a1a;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 14px;
+}
+
+.summary-row span:last-child {
+  color: #1a1a1a;
+  font-weight: bold;
+  text-align: right;
+}
+
+.summary-card hr {
+  border: none;
+  border-top: 1px solid #dbe6f3;
+  margin: 16px 0;
+}
+
+.summary-fee span {
+  font-size: 16px;
+  color: #0d6efd !important;
+}
+
+.summary-note {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.7;
+  margin-top: 16px;
+}
+
+footer {
+  background: #0d1b2a;
+  color: white;
+  padding: 40px 60px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  margin-bottom: 30px;
+}
+
+.footer-box {
+  width: 45%;
+}
+
+.footer-box h2 {
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.footer-box p {
+  line-height: 1.8;
+  color: #cbd5e1;
+  font-size: 15px;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid #334155;
+  margin: 20px 0;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-bottom p {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 15px 20px;
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .appointment-hero-text {
+    width: 90%;
+  }
+
+  .appointment-main-section {
+    flex-direction: column;
+    padding: 10px 30px 60px;
+  }
+
+  .summary-card {
+    position: static;
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-box {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  #appointment-hero h2 {
+    font-size: 26px;
+  }
+
+  .appointment-hero-text {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .form-row .form-group {
+    margin-bottom: 0;
+  }
+
+  .mode-options {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer {
+    padding: 30px 20px;
+  }
+}
