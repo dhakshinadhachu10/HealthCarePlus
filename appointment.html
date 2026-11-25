@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthCare+</title>
+    <link rel="stylesheet" href="./css/appointment.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img id="logo" src="./images/logo.jpg" alt="HealthCare Logo" />
+        <h1>HealthCare+</h1>
+      </div>
+      <nav>
+        <a class="nav-link" href="./index.html">Home</a>
+        <a class="nav-link" href="./doctors.html">Doctors</a>
+        <a class="nav-link" href="./about.html">About</a>
+        <a class="nav-link" href="./contact.html">Contact</a>
+      </nav>
+      <a href="./appointment.html"
+        ><button id="btn1">Book Appointment</button></a
+      >
+    </header>
+
+    <section id="appointment-hero">
+      <h2>Book Your Appointment</h2>
+      <p class="appointment-hero-text">
+        Choose a specialty, pick a doctor and select a time that works for
+        you. You'll get instant confirmation by SMS and email.
+      </p>
+    </section>
+    
+    <section class="appointment-main-section">
+      <form id="appointment-form" class="appointment-form">
+        <div class="form-block">
+          <h3>1. Choose Doctor</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="doctor">Doctor</label>
+              <select id="doctor" name="doctor" required>
+                <option value="" disabled selected>Select doctor</option>
+                <option value="dr-sanjay">Dr. Sanjay — Cardiologist</option>
+                <option value="dr-kumar">Dr. Kumar — Dentist</option>
+                <option value="dr-sanjay kumar">Dr. Sanjay kumar — Neurologist</option>
+                <option value="dr-kumar sanjay">Dr. Kumar sanjay — Orthopedic</option>
+                <option value="dr-karthik">Dr. Karthik — Pediatrician</option>
+                <option value="dr-vijay">Dr. vijay — Cardiologist</option>
+                <option value="dr-ashwin">Dr. Ashwin — Pediatrician</option>
+                <option value="dr-ajith">Dr. Ajith — Orthopedic</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-block">
+          <h3>2. Select Slot</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time">Preferred Time</label>
+              <select id="time" name="time" required>
+                <option value="" disabled selected>Select time slot</option>
+                <option value="09:00">9:00 AM</option>
+                <option value="10:30">10:30 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="14:00">2:00 PM</option>
+                <option value="15:30">3:30 PM</option>
+                <option value="17:00">5:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mode">Visit Type</label>
+            <div class="mode-options">
+              <label class="mode-option">
+                <input type="radio" name="mode" value="in-person" checked />
+                In-Person Visit
+              </label>
+              <label class="mode-option">
+                <input type="radio" name="mode" value="video" />
+                Video Consultation
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-block">
+          <h3>3. Your Details</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="patient-name">Full Name</label>
+              <input type="text" id="patient-name" name="patientName" placeholder="Enter patient name" required />
+            </div>
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="number" id="age" name="age" placeholder="Enter age" min="0" max="120" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select gender</option>
+                <option value="female">Male</option>
+                <option value="male">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required />
+          </div>
+          <div class="form-group">
+            <label for="reason">Reason for Visit</label>
+            <textarea id="reason" name="reason" rows="4" placeholder="Briefly describe your symptoms or reason for the visit"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" id="btn1" class="form-submit">Confirm Appointment</button>
+      </form>
+
+      <aside class="summary-card">
+        <h3>Appointment Summary</h3>
+        <div class="summary-row">
+          <span>Doctor</span>
+          <span id="summary-doctor">Not selected</span>
+        </div>
+        <div class="summary-row">
+          <span>Date</span>
+          <span id="summary-date">Not selected</span>
+        </div>
+        <div class="summary-row">
+          <span>Time</span>
+          <span id="summary-time">Not selected</span>
+        </div>
+        <hr />
+        <div class="summary-row summary-fee">
+          <span>Consultation Fee</span>
+          <span>₹500</span>
+        </div>
+        <p class="summary-note">
+          Payment is collected at the clinic. Cancel or reschedule free of
+          charge up to 2 hours before your visit.
+        </p>
+      </aside>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-box">
+          <h2>HealthCare+</h2>
+          <p>
+            Your trusted healthcare partner. Book appointments with experienced
+            doctors quickly and securely.
+          </p>
+        </div>
+        <div class="footer-box">
+          <h2>Contact</h2>
+          <p>Chennai, Tamil Nadu</p>
+          <p>+91 90009290090</p>
+          <p>support@healthcareplus.com</p>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <p>&copy; 2026 HealthCare+. All Rights Reserved.</p>
+        <p>
+          <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+        </p>
+      </div>
+    </footer>
+    <script src="./js/appointment.js"></script>
+  </body>
+</html>

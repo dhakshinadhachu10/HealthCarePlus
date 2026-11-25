@@ -1,0 +1,361 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    /* background:linear-gradient(to right,#0072ff,#00c6ff); */
+}
+body{
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/fll-lp-ban-img-01.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fffdfd;
+
+}
+
+.header{
+    height:80px;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 70px;
+    background:linear-gradient(to right,#0072ff,#00c6ff);
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+#logo{
+    width:80px;
+    height:60px;
+    border-radius:50%;
+}
+
+.logo h1{
+    font-size:38px;
+}
+
+nav{
+    display:flex;
+    gap:35px;
+}
+
+.nav-link{
+    text-decoration:none;
+    color:#222;
+    font-size:18px;
+    font-weight:bold;
+    padding:10px 15px;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+    background:black;
+    color:#39ff14;
+}
+
+
+#btn1{
+    padding:12px 22px;
+    border:none;
+    border-radius:8px;
+    background:#0D6EFD;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    font-weight: bold;
+    transition:.3s;
+}
+
+#btn1:hover{
+    transform:scale(1.05);
+    background:black;
+    color:#39ff14;
+}
+
+@media(max-width:992px){
+    .header{
+        padding:0 30px;
+    }
+    .section-main{
+        width:70%;
+        margin-left:40px;
+    }
+}
+
+@media(max-width:768px){
+    .header{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:15px;
+    }
+
+    nav{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .main{
+        height:auto;
+        padding:80px 0;
+    }
+
+    .section-main{
+        width:90%;
+        margin:auto;
+        text-align:center;
+    }
+
+    .buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+}
+
+#main{
+
+    text-align:center;
+    padding:60px 20px;
+    /* background:#f7fbff; */
+    /* background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)) */
+
+}
+
+.title-small{
+    font-size: 46px;
+    color: #00e5ff;
+    font-weight: bold;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+    position:relative;
+    animation:marquee 10s linear infinite;
+}
+
+@keyframes marquee{
+    from{   
+        transform:translateX(100%);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+
+#main h2{
+
+    font-size:40px;
+    width:65%;
+    margin:auto;
+    margin-bottom:35px;
+
+}
+
+.category{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+}
+
+.category button{
+
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ffffff;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    transition:.3s;
+
+}
+
+.category button:hover{
+
+    background:#0072ff;
+    color:white;
+    transform:translateY(-5px);
+
+}
+
+
+.doctor-section{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:35px;
+    padding:60px 80px;
+    /* background:#eef7ff; */
+
+}
+
+.doctor-card{
+
+    background:linear-gradient(to bottom, rgb(64, 162, 243),white);
+    border-radius:15px;
+    text-align:center;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+
+}
+
+.doctor-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.doctor-card img{
+
+    width:140px;
+    height:140px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-bottom:20px;
+    border:5px solid #00c6ff;
+
+}
+
+.doctor-card h3{
+
+    margin-bottom:10px;
+    color: black;
+}
+
+.speciality{
+
+    color:#0072ff;
+    font-weight:bold;
+    margin-bottom:10px;
+
+}
+
+.doctor-card p{
+
+    margin-bottom:10px;
+    color:hwb(90 20% 80%);
+
+}
+
+.doctor-card button{
+
+    margin-top:10px;
+    padding:12px 20px;
+    width:100%;
+    border:none;
+    border-radius:8px;
+    background:#0072ff;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.doctor-card button:hover{
+
+    background:#000;
+    color:#39ff14;
+
+}
+
+
+@media(max-width:768px){
+
+#main h2{
+
+    width:95%;
+    font-size:28px;
+
+}
+
+.doctor-section{
+
+    padding:40px 20px;
+
+}
+
+.category{
+
+    gap:12px;
+
+}
+
+.category button{
+
+    padding:10px 18px;
+    font-size:14px;
+
+}
+
+}
+
+footer{
+    background:#0d1b2a;
+    color:white;
+    padding:40px 80px 20px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    gap:100px;
+    margin-bottom:30px;
+}
+
+.footer-box{
+    width:45%;
+}
+
+.footer-box h2{
+    margin-bottom:15px;
+    color:#00c6ff;
+}
+
+.footer-box p{
+    line-height:1.8;
+    color:#d9d9d9;
+}
+
+hr{
+    border:none;
+    border-top:1px solid #555;
+    margin-bottom:20px;
+}
+
+.footer-bottom{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.footer-bottom p{
+    color:#ccc;
+}
+
+.footer-bottom a{
+    color:#00c6ff;
+    text-decoration:none;
+}
+
+.footer-bottom a:hover{
+    text-decoration:underline;
+}
